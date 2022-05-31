@@ -1,0 +1,44 @@
+body {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.fila-formulario {
+  margin-top: 10%;
+}
+
+.boton-login {
+  width: 100%;
+  color: black;
+  background-color: aquamarine;
+  border-color: aquamarine;
+}
+
+.boton-login:hover {
+  color: black;
+  background-color: aqua;
+  border-color: aqua;
+}
+
+.caja-superior {
+  padding: 5%;
+  background-color: aliceblue;
+  border-radius: 4px 4px 0 0;
+  color: darkgray;
+}
+
+.caja-form {
+  padding: 5%;
+  background-color: darkgray;
+  border-radius: 0 0 4px 4px;
+}
+
+.comentario-login {
+  color: aliceblue;
+}
+
+.login-with {
+  padding: 20px;
+}
