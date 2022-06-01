@@ -1,5 +1,5 @@
 body {
-  background-color: #66ebff;
+  background-color: deepskyblue;
 }
 
 .calculadora {
@@ -14,30 +14,24 @@ body {
   background-color: white;
 }
 
-.container-botones {
-  display: flex;
-  flex-direction: column;
-}
-
 .container-teclado {
   border: 1px solid darkgrey;
   background-color: darkgrey;
-  width: 66.6%;
 }
 
 .container-lateral {
   border: 1px solid #66ebff;
-  width: 33.3%;
   background-color: #66ebff;
 }
 
 .btn-calculadora {
-  width: 30%;
+  width: 25%;
   height: 50px;
   color: white;
   background-color: darkgrey;
   border-radius: 0%;
   border-radius: 5px;
+  font-size: 22px;
 }
 
 .btn-calculadora:hover {
@@ -46,12 +40,13 @@ body {
 }
 
 .btn-lateral {
-  width: 100%;
+  width: 25%;
   height: 33, 3px;
   color: white;
   background-color: #66ebff;
   border-radius: 0%;
   border-radius: 5px;
+  font-size: 22px;
 }
 
 .btn-lateral:hover {

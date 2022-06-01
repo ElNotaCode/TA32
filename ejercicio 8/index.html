@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/mystyles.css" />
+    <script src="scripts/codigo.js"></script>
   </head>
   <body class="text-center">
     <div class="container">
@@ -28,40 +29,144 @@
         <div class="col-sm"></div>
         <div class="col-md-4 calculadora">
           <div class="pantalla">
-            <p id="pantalla1">0</p>
-            <p id="pantalla2">0</p>
+            <p id="pantalla-1">0</p>
+            <p id="pantalla-2">0</p>
           </div>
           <!--FIN pantalla-->
           <div class="container-botones">
             <div class="container-teclado">
               <div class="fila-1">
-                <button type="button" class="btn btn-calculadora">9</button>
-                <button type="button" class="btn btn-calculadora">8</button>
-                <button type="button" class="btn btn-calculadora">7</button>
+                <button
+                  type="button"
+                  class="btn btn-calculadora"
+                  onclick="introducirNumero(9)"
+                >
+                  9
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-calculadora"
+                  onclick="introducirNumero(8)"
+                >
+                  8
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-calculadora"
+                  onclick="introducirNumero(7)"
+                >
+                  7
+                </button>
               </div>
               <div class="fila-2">
-                <button type="button" class="btn btn-calculadora">6</button>
-                <button type="button" class="btn btn-calculadora">5</button>
-                <button type="button" class="btn btn-calculadora">4</button>
+                <button
+                  type="button"
+                  class="btn btn-calculadora"
+                  onclick="introducirNumero(6)"
+                >
+                  6
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-calculadora"
+                  onclick="introducirNumero(5)"
+                >
+                  5
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-calculadora"
+                  onclick="introducirNumero(4)"
+                >
+                  4
+                </button>
               </div>
               <div class="fila-3">
-                <button type="button" class="btn btn-calculadora">3</button>
-                <button type="button" class="btn btn-calculadora">2</button>
-                <button type="button" class="btn btn-calculadora">1</button>
+                <button
+                  type="button"
+                  class="btn btn-calculadora"
+                  onclick="introducirNumero(3)"
+                >
+                  3
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-calculadora"
+                  onclick="introducirNumero(2)"
+                >
+                  2
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-calculadora"
+                  onclick="introducirNumero(1)"
+                >
+                  1
+                </button>
               </div>
               <div class="fila-4">
-                <button type="button" class="btn btn-calculadora">.</button>
-                <button type="button" class="btn btn-calculadora">0</button>
-                <button type="button" class="btn btn-calculadora">00</button>
+                <button
+                  type="button"
+                  class="btn btn-calculadora"
+                  onclick="coma()"
+                >
+                  .
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-calculadora"
+                  onclick="introducirNumero(0)"
+                >
+                  0
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-calculadora"
+                  onclick="introducirCeros()"
+                >
+                  00
+                </button>
               </div>
             </div>
             <div class="container-lateral">
-              <button type="button" class="btn btn-lateral">DEL</button>
-              <button type="button" class="btn btn-lateral">/</button>
-              <button type="button" class="btn btn-lateral">X</button>
-              <button type="button" class="btn btn-lateral">-</button>
-              <button type="button" class="btn btn-lateral">+</button>
-              <button type="button" class="btn btn-lateral">=</button>
+              <button type="button" class="btn btn-lateral" onclick="borrarC()">
+                DEL
+              </button>
+              <button
+                type="button"
+                class="btn btn-lateral"
+                onclick="realizarOperacion('/')"
+              >
+                /
+              </button>
+              <button
+                type="button"
+                class="btn btn-lateral"
+                onclick="realizarOperacion('*')"
+              >
+                X
+              </button>
+              <button
+                type="button"
+                class="btn btn-lateral"
+                onclick="realizarOperacion('-')"
+              >
+                -
+              </button>
+              <button
+                type="button"
+                class="btn btn-lateral"
+                onclick="realizarOperacion('+')"
+              >
+                +
+              </button>
+              <button
+                type="button"
+                class="btn btn-lateral"
+                onclick="calcular()"
+              >
+                =
+              </button>
             </div>
           </div>
           <!--FIN botones-->
